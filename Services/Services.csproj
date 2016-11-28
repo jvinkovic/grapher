@@ -60,14 +60,24 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service1.svc" />
+    <Content Include="DataService.svc" />
+    <Content Include="FrontendService.svc" />
+    <Content Include="GraphPathService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service1.svc.cs">
-      <DependentUpon>Service1.svc</DependentUpon>
+    <Compile Include="DataService.svc.cs">
+      <DependentUpon>DataService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IService1.cs" />
+    <Compile Include="FrontendService.svc.cs">
+      <DependentUpon>FrontendService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="GraphPathService.svc.cs">
+      <DependentUpon>GraphPathService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IDataService.cs" />
+    <Compile Include="IFrontendService.cs" />
+    <Compile Include="IGraphPathService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
